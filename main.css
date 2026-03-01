@@ -1,0 +1,61 @@
+:root {
+  --ink: #0b0f19;
+  --muted: #5b6475;
+  --line: rgba(0, 0, 0, 0.08);
+  --soft: rgba(0, 0, 0, 0.04);
+  --focus: rgba(0, 0, 0, 0.22);
+  --radius: 18px;
+}
+
+body {
+  background: #ffffff;
+  color: var(--ink);
+}
+
+.paper-grid {
+  background-image:
+    linear-gradient(to right, var(--soft) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--soft) 1px, transparent 1px);
+  background-size: 46px 46px;
+  background-position: 0 0, 0 0;
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0.10);
+}
+
+.u-link {
+  position: relative;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  transition: background-size 0.25s ease, opacity 0.2s ease;
+  opacity: 0.92;
+}
+
+.u-link:hover {
+  background-size: 100% 2px;
+  opacity: 1;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 12px;
+}
+
+
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:hover,
+a:hover {
+  transform: translateY(-0.5px);
+}
+
+button:active,
+a:active {
+  transform: translateY(0);
+}
