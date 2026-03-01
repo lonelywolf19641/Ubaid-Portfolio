@@ -3,8 +3,6 @@
   --muted: #5b6475;
   --line: rgba(0, 0, 0, 0.08);
   --soft: rgba(0, 0, 0, 0.04);
-
-  /* litt "personlig" touch */
   --focus: rgba(0, 0, 0, 0.22);
   --radius: 18px;
 }
@@ -14,7 +12,6 @@ body {
   color: var(--ink);
 }
 
-/* litt mindre "perfekt" grid */
 .paper-grid {
   background-image:
     linear-gradient(to right, var(--soft) 1px, transparent 1px),
@@ -23,12 +20,10 @@ body {
   background-position: 0 0, 0 0;
 }
 
-/* små ting som gjør siden mer "deg" */
 ::selection {
   background: rgba(0, 0, 0, 0.10);
 }
 
-/* underline links */
 .u-link {
   position: relative;
   background-image: linear-gradient(currentColor, currentColor);
@@ -44,14 +39,13 @@ body {
   opacity: 1;
 }
 
-/* fokus */
 :focus-visible {
   outline: 3px solid var(--focus);
   outline-offset: 3px;
   border-radius: 12px;
 }
 
-/* litt mer "human" hover på klikkbare kort */
+
 a, button {
   -webkit-tap-highlight-color: transparent;
 }
